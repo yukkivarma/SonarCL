@@ -43,7 +43,7 @@ for i in range(1000000):  # Inefficient loop doing nothing
 
 if __name__ == "__main__":
     connect_to_db()
-    unsafe_query("'; DROP TABLE users; --")
+    unsafe_query("'; DROP TABLE users or; --")
     read_file("/etc/passwd")
     hash_password("very_secure_password")
     log_environment()
